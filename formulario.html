@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>H.P Lovecraft</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<meta name="keywords" content="H.P Lovecraft Cthulhu relato terror" />
+	<meta name="description" content="P&aacute;gina para dar a conocer la mitolog&iacute;a que rodea a los relatos de H.P. Lovecraft" />
+    <meta name="author" content="Jorge Pinel Ruiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+		body {
+			margin: 50px;
+			padding: 50px;
+			background-image: url('backformu.jpg');
+			background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+			font-family: 'Tahoma', sans-serif;
+			font-size: 22pt;
+			color: #b9f0b9e8
+        }
+        .speciallabel{
+            color: black;
+        }
+        .speciallabel:hover {
+            color: #b9f0b9e8; 
+
+        }
+        .video{
+            font-size: 14pt;
+            position: fixed;  /* Hace que el div esté fijo en la pantalla */
+             bottom: 0;        /* Lo coloca en la parte inferior */
+            right: 0;          /* Lo coloca en la parte derecha */
+            width: 20%;
+        }
+        #miDiv {
+            font-size: 33pt;
+            position: fixed;  /* Hace que el div esté fijo en la pantalla */
+             bottom: 0;        /* Lo coloca en la parte inferior */
+            left: 0;          /* Lo coloca en la parte derecha */
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Formulario de Contacto</h2>
+
+    <form action="enviar_datos.php" method="POST">
+        <!-- Campo para nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <!-- Campo para correo electrónico -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Campo de selección -->
+        <label for="opciones">Elija un caracter</label>
+        <select id="opciones" name="opciones">
+            <option value="opcion1">A</option>
+            <option value="opcion2">p</option>
+            <option value="opcion4">r</option>
+            <option value="opcion5">u</option>
+            <option value="opcion6">é</option>
+            <option value="opcion7">b</option>
+            <option value="opcion8">e</option>
+            <option value="opcion9">m</option>
+            <option value="opcion10">e</option>
+            <option value="opcion11">P</option>
+            <option value="opcion12">L</option>
+            <option value="opcion13">S</option>
+            <option value="opcion13">!</option>
+
+
+        </select>
+        <br><br>
+
+        <!-- Campo de casilla de verificación -->
+        <label for="suscripcion">
+            <input type="checkbox" id="suscripcion" name="suscripcion">
+           Aprobar
+        </label>
+        <br><br>
+
+        <!-- Campo de radio -->
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="Dioscosmico" name="sexo" value="Dioscosmico">
+        <label for="Dioscosmico" class="speciallabel" >Dios cósmico</label>
+        <br><br>
+
+        <!-- Botón de envío -->
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="video" >
+        Tanto Lovecraft como Chambers hablan de poderes malditos que te podrían hacer perder la cabeza, pero el terror real se encuentra en el siguiente vídeo:
+        <span style="font-size: 11px; color: red;">**ver bajo propia responsabilidad**</span>
+        <iframe width="380" height="280" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
+    </div>
+    <div id="miDiv" >
+        <a href="paginaweb.html" style="color: #b9f0b9e8;">Regresar</a>
+      </div>
+</body>
+</html>
